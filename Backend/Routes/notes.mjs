@@ -52,7 +52,6 @@ notesRouter.post(
 );
 
 // Route:3 Update a note using a PUT request at "../api/notes/updatenote".
-
 notesRouter.put("/updatenote/:id", fetchUser, async (req, res) => {
   const { title, description, tag } = req.body;
 
@@ -99,7 +98,6 @@ notesRouter.put("/updatenote/:id", fetchUser, async (req, res) => {
 });
 
 // Route:4 Delete a note using a DELETE request at "../api/notes/deletenote".
-
 notesRouter.delete("/deletenote/:id", async (req, res) => {
   // Find the note to be deleted
   try {
